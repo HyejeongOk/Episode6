@@ -1,6 +1,4 @@
-using System.Security.Cryptography;
 using NaughtyAttributes;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class for2 : MonoBehaviour

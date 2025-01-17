@@ -90,4 +90,22 @@ public class TileGanerator : MonoBehaviour
             }
         }
     }
+
+    [Button]
+    void Build4()
+    {
+        GameObject Empty = new GameObject("Group");
+
+        for (int a = 0; a < horzCnt; a++)
+        {
+            for (int b = 0; b < floorCnt; b++)
+            {
+                for (int c = 0; c < vertCnt; c++)
+                {
+                    GameObject o = Instantiate(tilePrefab, new Vector3(a*gap, b*gap, c*gap), Quaternion.identity); 
+                    o.transform.SetParent(Empty.transform);
+                }
+            }
+        }
+    }
 }
